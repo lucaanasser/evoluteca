@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evoluteca</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="motor/estilo.css">
+  <script type="importmap">
+    { "imports": { "r": "./motor/r.js" } }
+  </script>
+</head>
+<body>
+  <main id="raiz"></main>
+  <noscript>
+    <p>Os simuladores precisam de JavaScript. A simulação roda no seu aparelho:
+    nada é enviado a servidor algum.</p>
+  </noscript>
+
+  <script type="module">
+    import { montarSimulador } from "./motor/simulador.js";
+    import * as deriva from "./simulacoes/deriva.js";
+
+    montarSimulador(document.getElementById("raiz"), deriva);
+  </script>
+</body>
+</html>
