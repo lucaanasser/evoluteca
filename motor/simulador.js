@@ -1,5 +1,5 @@
 import { criarGerador } from "r";
-import { desenharLinhas } from "./grafico.js";
+import { linhas } from "./graficos/__entrada__.js";
 
 const PASSOS_LOG = 1000;
 
@@ -91,7 +91,7 @@ export function montarSimulador(raiz, modelo) {
   const rodape = el("div", { class: "legenda" });
 
   function desenhar() {
-    desenharLinhas(tela, series, meta.grafico);
+    linhas(tela, series, meta.grafico);
     rodape.replaceChildren(...legenda(series.length));
   }
 
