@@ -1,0 +1,13 @@
+body {
+  font-family: var(--fonte);
+  line-height: 1.6;
+  color: var(--texto-cor);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  margin: 0 0 1.5rem;
+  font-weight: 300;
+  font-size: clamp(1.7rem, 3vw, 2.15rem);
+  color: var(--titulo-cor);
+}

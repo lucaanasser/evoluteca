@@ -1,0 +1,30 @@
+.legenda {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.1rem;
+  font-size: 0.8rem;
+  color: var(--texto-suave-cor);
+  margin-top: 0.6rem;
+}
+
+.legenda-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.marca-foco,
+.marca-feixe {
+  width: 20px;
+  height: 3px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.marca-foco {
+  background: var(--grafico-foco-cor);
+}
+
+.marca-feixe {
+  background: var(--grafico-feixe-cor);
+}

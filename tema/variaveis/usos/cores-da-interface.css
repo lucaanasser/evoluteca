@@ -1,0 +1,11 @@
+:root {
+  --texto-cor: var(--cinza-24);
+  --texto-suave-cor: var(--cinza-42);
+  --texto-claro-cor: var(--branco);
+  --titulo-cor: var(--azul-marinho);
+  --fundo-cor: var(--branco);
+  --fundo-painel-cor: var(--cinza-96);
+  --borda-cor: var(--cinza-90);
+  --destaque-cor: var(--azul-petroleo);
+  --destaque-forte-cor: var(--azul-petroleo-escuro);
+}

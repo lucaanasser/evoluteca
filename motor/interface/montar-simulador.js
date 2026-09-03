@@ -55,7 +55,7 @@ export function montarSimulador(raiz, modelo) {
       criar("div", { class: "painel-topo" }, criar("h2", { texto: "Parâmetros" }), botao),
       parametros
     ),
-    criar("section", { class: "quadro", "aria-label": "Simulação" }, canvas, rodape)
+    criar("section", { class: "area-da-simulacao", "aria-label": "Simulação" }, canvas, rodape)
   );
 
   document.title = `${meta.titulo} · Evoluteca`;

@@ -1,0 +1,24 @@
+.parametro {
+  display: grid;
+  gap: 0.3rem;
+}
+
+.parametro label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.valor {
+  color: var(--destaque-forte-cor);
+  font-variant-numeric: tabular-nums;
+}
+
+.parametro input {
+  width: 100%;
+  margin: 0;
+  accent-color: var(--destaque-cor);
+}

@@ -1,1 +1,1 @@
-export { lerVariaveis, lerNumeros } from "./ler-variaveis.js";
+export { lerVariaveis, lerNumeros } from "./variaveis/__entrada__.js";
