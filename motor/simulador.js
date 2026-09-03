@@ -1,4 +1,4 @@
-import { criarRng } from "r";
+import { criarGerador } from "r";
 import { desenharLinhas } from "./grafico.js";
 
 const PASSOS_LOG = 1000;
@@ -96,7 +96,7 @@ export function montarSimulador(raiz, modelo) {
   }
 
   function rodar() {
-    series = simular({ ...valores }, criarRng(semente));
+    series = simular({ ...valores }, criarGerador(semente));
     desenhar();
   }
 
