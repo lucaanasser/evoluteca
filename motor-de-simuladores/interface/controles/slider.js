@@ -1,4 +1,4 @@
-import { criar } from "../criar-html.js";
+import { criar } from "criar-html";
 
 const PASSOS_LOG = 1000;
 
