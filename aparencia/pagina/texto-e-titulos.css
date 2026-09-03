@@ -11,3 +11,10 @@ h1 {
   font-size: clamp(1.7rem, 3vw, 2.15rem);
   color: var(--titulo-cor);
 }
+
+.lede {
+  margin: 0;
+  max-width: 68ch;
+  font-size: 1.05rem;
+  color: var(--texto-suave-cor);
+}

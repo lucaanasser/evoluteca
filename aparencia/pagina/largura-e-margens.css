@@ -1,5 +1,13 @@
 body {
+  margin: 0;
+}
+
+.container {
   margin: 0 auto;
-  padding: 2.5rem 1.25rem 4rem;
+  padding: 0 1.25rem;
   max-width: 1170px;
+}
+
+main {
+  padding: 2.5rem 0 4rem;
 }

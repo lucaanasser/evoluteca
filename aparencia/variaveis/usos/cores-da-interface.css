@@ -8,4 +8,9 @@
   --borda-cor: var(--cinza-90);
   --destaque-cor: var(--azul-petroleo);
   --destaque-forte-cor: var(--azul-petroleo-escuro);
+  --faixa-amarela-cor: var(--amarelo-usp);
+  --faixa-ciano-cor: var(--ciano-usp);
+  --barra-institucional-cor: var(--azul-petroleo);
+  --cabecalho-fundo-cor: var(--cinza-96);
+  --marca-cor: var(--azul-medio);
 }

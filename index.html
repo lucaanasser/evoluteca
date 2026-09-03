@@ -4,30 +4,42 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Evoluteca</title>
+  <meta name="description" content="Simuladores de modelos da biologia, em português. Projeto de extensão do Instituto de Biociências da USP.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="aparencia/__pacote__.css">
-  <script type="importmap">
-    {
-      "imports": {
-        "r": "./motor-de-simuladores/r/__pacote__.js",
-        "criar-html": "./criar-html.js"
-      }
-    }
-  </script>
 </head>
 <body>
-  <main id="raiz"></main>
-  <noscript>
-    <p></p>
-  </noscript>
+  <div class="faixa-amarela"></div>
+  <div class="faixa-ciano"></div>
+  <div class="barra-institucional">
+    <div class="container">
+      <a class="logo-institucional" href="https://www.ib.usp.br" title="Instituto de Biociências da USP">
+        <img class="logo-do-ib" src="imagens/icone-ib-branco.png" alt="Instituto de Biociências da USP">
+      </a>
+      <a class="logo-institucional" href="https://www5.usp.br" title="Universidade de São Paulo">
+        <img class="logo-da-usp" src="imagens/logo-usp-branco.png" alt="Universidade de São Paulo">
+      </a>
+    </div>
+  </div>
 
-  <script type="module">
-    import { montarSimulador } from "./motor-de-simuladores/interface/__pacote__.js";
-    import * as deriva from "./modelos-de-simulacao/deriva-genetica.js";
+  <header class="cabecalho">
+    <div class="container">
+      <a class="marca" href="index.html">
+        <span class="marca-nome">Evoluteca</span>
+        <span class="marca-instituicao">Instituto de Biociências · USP</span>
+      </a>
+    </div>
+  </header>
 
-    montarSimulador(document.getElementById("raiz"), deriva);
-  </script>
+  <main>
+    <div class="container">
+      <h1>Simuladores de modelos da biologia.</h1>
+      <p class="lede">
+        Projeto de extensão do Instituto de Biociências da USP.
+      </p>
+    </div>
+  </main>
 </body>
 </html>

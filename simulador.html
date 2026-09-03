@@ -18,6 +18,13 @@
   </script>
 </head>
 <body>
-  <main id="raiz"></main>
+  <main id="raiz" class="container"></main>
+
+  <script type="module">
+    import { montarSimulador } from "./motor-de-simuladores/interface/__pacote__.js";
+    import * as deriva from "./modelos-de-simulacao/deriva-genetica.js";
+
+    montarSimulador(document.getElementById("raiz"), deriva);
+  </script>
 </body>
 </html>
