@@ -1,0 +1,18 @@
+.botao {
+  font: inherit;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--texto-claro-cor);
+  background: var(--destaque-cor);
+  border: 1px solid var(--destaque-cor);
+  border-radius: var(--border-radius);
+  padding: 0.7rem 1.1rem;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background: var(--destaque-forte-cor);
+  border-color: var(--destaque-forte-cor);
+}

@@ -7,9 +7,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="tema/__entrada__.css">
+  <link rel="stylesheet" href="aparencia/__pacote__.css">
   <script type="importmap">
-    { "imports": { "r": "./motor/r/__entrada__.js" } }
+    { "imports": { "r": "./motor-de-simuladores/r/__pacote__.js" } }
   </script>
 </head>
 <body>
@@ -19,8 +19,8 @@
   </noscript>
 
   <script type="module">
-    import { montarSimulador } from "./motor/interface/__entrada__.js";
-    import * as deriva from "./simulacoes/deriva.js";
+    import { montarSimulador } from "./motor-de-simuladores/interface/__pacote__.js";
+    import * as deriva from "./modelos-de-simulacao/deriva-genetica.js";
 
     montarSimulador(document.getElementById("raiz"), deriva);
   </script>
