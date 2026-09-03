@@ -1,8 +1,8 @@
-import { cores } from "../cores.js";
+import { lerTema } from "../ler-tema.js";
 import { preparar, eixos } from "../bases/__entrada__.js";
 
 export function linhas(canvas, series, opcoes) {
-  const C = cores();
+  const tema = lerTema();
   const { ctx, largura, altura } = preparar(canvas);
 
   const geracoes = Math.max(1, Math.max(...series.map((s) => s.length)) - 1);
@@ -10,7 +10,7 @@ export function linhas(canvas, series, opcoes) {
   const xlim = [0, geracoes];
   const ylim = opcoes.ylim;
 
-  eixos(ctx, area, xlim, ylim, opcoes, C);
+  eixos(ctx, area, xlim, ylim, opcoes, tema);
 
   const px = (i) => area.esquerda + (i / geracoes) * (area.direita - area.esquerda);
   const py = (v) => area.base - ((v - ylim[0]) / (ylim[1] - ylim[0])) * (area.base - area.topo);
@@ -29,14 +29,14 @@ export function linhas(canvas, series, opcoes) {
   ctx.lineCap = "round";
 
   const muitas = series.length > 4;
-  ctx.strokeStyle = C.feixe;
-  ctx.globalAlpha = muitas ? 0.3 : 0.75;
-  ctx.lineWidth = muitas ? 1.3 : 2;
+  ctx.strokeStyle = tema.feixeCor;
+  ctx.globalAlpha = muitas ? tema.feixeOpacidadeDenso : tema.feixeOpacidade;
+  ctx.lineWidth = muitas ? tema.feixeLinhaDenso : tema.feixeLinha;
   for (let k = 1; k < series.length; k++) tracar(series[k]);
 
   ctx.globalAlpha = 1;
-  ctx.lineWidth = 2.6;
-  ctx.strokeStyle = C.foco;
+  ctx.lineWidth = tema.focoLinha;
+  ctx.strokeStyle = tema.focoCor;
   tracar(series[0]);
 
   ctx.restore();

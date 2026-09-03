@@ -1,4 +1,4 @@
-import { criar } from "../criar-elemento.js";
+import { criar } from "../criar-html.js";
 
 export function legenda(quantas) {
   const item = (classe, texto) =>

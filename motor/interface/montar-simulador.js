@@ -1,6 +1,6 @@
 import { criarGerador } from "r";
 import { linhas } from "../graficos/__entrada__.js";
-import { criar } from "./criar-elemento.js";
+import { criar } from "./criar-html.js";
 import { slider } from "./controles/__entrada__.js";
 import { legenda } from "./mostradores/__entrada__.js";
 

@@ -1,4 +1,4 @@
-import { criar } from "../criar-elemento.js";
+import { criar } from "../criar-html.js";
 
 const PASSOS_LOG = 1000;
 

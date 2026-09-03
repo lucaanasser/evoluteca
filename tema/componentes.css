@@ -1,15 +1,3 @@
-:root {
-  --navy: #142560;
-  --teal: #1094ab;
-  --teal-escuro: #0d7a8d;
-  --tinta: #3d3d3d;
-  --tinta-suave: #6b6b6b;
-  --fundo-suave: #f5f5f5;
-  --borda: #e5e5e5;
-  --fonte: "Open Sans", Arial, sans-serif;
-  --raio: 4px;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -145,9 +133,9 @@ h1 {
 }
 
 .marca-foco {
-  background: var(--navy);
+  background: var(--grafico-foco-cor);
 }
 
 .marca-feixe {
-  background: var(--teal);
+  background: var(--grafico-feixe-cor);
 }
