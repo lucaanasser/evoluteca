@@ -23,11 +23,14 @@
   --largura-minima-do-parametro:  210px;
   --largura-minima-do-cartao:     260px;
   --largura-minima-do-grafico:    340px;
+  --largura-minima-da-coluna-do-rodape: 200px;
 
   --altura-da-listra:               6px;
   --altura-da-barra-de-logos:      40px;
   --altura-do-logo-do-ib:          26px;
   --altura-do-logo-da-usp:         22px;
+  --altura-do-logo-do-ib-no-rodape:      112px;
+  --altura-do-logo-da-usp-no-rodape:      52px;
 
   --deslizante-altura-do-trilho:    4px;
   --deslizante-diametro-do-botao:  16px;

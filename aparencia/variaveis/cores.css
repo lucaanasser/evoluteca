@@ -19,5 +19,8 @@
    --cor-de-acao-ao-apertar: var(--azul-46);
    --cor-do-foco:            var(--azul-escuro-ib);
 
+   --cor-do-texto-no-rodape: rgba(255, 255, 255, 0.70);
+   --cor-do-link-no-rodape:  rgba(255, 255, 255, 0.55);
+
    --opacidade-do-logo:      0.95;
 }

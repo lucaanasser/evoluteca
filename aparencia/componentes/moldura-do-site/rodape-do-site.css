@@ -1,0 +1,83 @@
+.rodape-do-site {
+  background: var(--azul-escuro-ib);
+  color: var(--cor-do-texto-no-rodape);
+}
+
+.colunas-do-rodape {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--largura-minima-da-coluna-do-rodape), 1fr));
+  gap: var(--espaco-40);
+  padding-block: var(--espaco-64) var(--espaco-40);
+}
+
+.titulo-do-rodape {
+  margin: 0 0 var(--espaco-16);
+  font-size: var(--texto-do-titulo-do-cartao);
+  font-weight: var(--peso-do-texto);
+  line-height: var(--altura-de-linha-do-titulo);
+  text-transform: uppercase;
+  color: var(--branco-100);
+}
+
+.lista-do-rodape {
+  display: grid;
+  gap: var(--espaco-12);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: var(--texto-do-rodape);
+}
+
+.rodape-do-site a {
+  text-decoration: none;
+  color: var(--cor-do-link-no-rodape);
+}
+
+.rodape-do-site a:hover {
+  color: var(--branco-100);
+}
+
+.rodape-do-site a:focus-visible {
+  outline-color: var(--branco-100);
+}
+
+.logos-do-rodape {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-self: end;
+  gap: var(--espaco-24);
+}
+
+.logos-do-rodape a {
+  line-height: 0;
+  opacity: var(--opacidade-do-logo);
+}
+
+.logos-do-rodape a:hover {
+  opacity: 1;
+}
+
+.logos-do-rodape img {
+  display: block;
+  width: auto;
+}
+
+.logo-do-ib-no-rodape {
+  height: var(--altura-do-logo-do-ib-no-rodape);
+}
+
+.logo-da-usp-no-rodape {
+  height: var(--altura-do-logo-da-usp-no-rodape);
+}
+
+.base-do-rodape {
+  padding-block: var(--espaco-24);
+  font-size: var(--texto-do-rodape);
+  text-align: center;
+  color: var(--cor-do-link-no-rodape);
+}
+
+.base-do-rodape p {
+  margin: 0;
+}

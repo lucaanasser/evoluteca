@@ -1,11 +1,5 @@
 import { criar } from "../criar-elemento.js";
-
-const paginas = [
-  { nome: "Início", arquivo: "index.html" },
-  { nome: "Simuladores", arquivo: "catalogo.html" },
-];
-
-const endereco = (arquivo) => new URL(`../../../${arquivo}`, import.meta.url).href;
+import { paginasDoSite, enderecoDaPagina } from "./paginas-do-site.js";
 
 function arquivoAberto() {
   const caminho = window.location.pathname;
@@ -18,10 +12,10 @@ export function menuDoSite() {
   return criar(
     "nav",
     { class: "menu-do-site", "aria-label": "Páginas do site" },
-    ...paginas.map(({ nome, arquivo }) =>
+    ...paginasDoSite.map(({ nome, arquivo }) =>
       criar("a", {
         class: "item-do-menu",
-        href: endereco(arquivo),
+        href: enderecoDaPagina(arquivo),
         texto: nome,
         "aria-current": arquivo === aberto ? "page" : false,
       })
