@@ -8,6 +8,7 @@
   --texto-do-titulo-do-cartao: 1.15rem;
   --texto-do-corpo:            1rem;
   --texto-do-titulo-de-secao:  0.75rem;
+  --texto-do-menu:             0.82rem;
   --texto-do-grafico:          12px;
 
   --peso-do-texto:    400;
@@ -19,5 +20,6 @@
 
   --entreletra-de-versalete: 0.12em;
   --entreletra-da-marca:    -0.01em;
+  --entreletra-do-menu:      0.06em;
   --recuo-do-sublinhado:     0.2em;
 }

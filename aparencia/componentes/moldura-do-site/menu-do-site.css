@@ -1,0 +1,26 @@
+.menu-do-site {
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-4);
+}
+
+.item-do-menu {
+  padding: var(--espaco-8) var(--espaco-12);
+  border-bottom: var(--espessura-do-item-aberto) solid transparent;
+  font-size: var(--texto-do-menu);
+  font-weight: var(--peso-de-destaque);
+  letter-spacing: var(--entreletra-do-menu);
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  color: var(--cinza-53);
+}
+
+.item-do-menu:hover {
+  color: var(--cor-de-acao-ao-apertar);
+}
+
+.item-do-menu[aria-current="page"] {
+  color: var(--cor-de-acao-ao-apertar);
+  border-bottom-color: var(--cor-de-acao);
+}

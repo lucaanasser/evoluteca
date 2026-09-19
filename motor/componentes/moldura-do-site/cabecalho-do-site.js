@@ -1,4 +1,5 @@
 import { criar } from "../criar-elemento.js";
+import { menuDoSite } from "./menu-do-site.js";
 
 const inicio = new URL("../../../index.html", import.meta.url).href;
 
@@ -14,7 +15,8 @@ export function cabecalhoDoSite() {
         { class: "marca", href: inicio },
         criar("span", { class: "marca-nome", texto: "Evoluteca" }),
         criar("span", { class: "marca-instituicao", texto: "Instituto de Biociências · USP" })
-      )
+      ),
+      menuDoSite()
     )
   );
 }

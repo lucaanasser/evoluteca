@@ -4,6 +4,11 @@
 }
 
 .cabecalho-do-site .coluna-central {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--espaco-24);
   padding-block: var(--espaco-16);
 }
 
