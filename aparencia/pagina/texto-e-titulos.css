@@ -1,20 +1,46 @@
 body {
-  font-family: var(--fonte);
-  line-height: 1.6;
-  color: var(--texto-cor);
+  font-family: var(--fonte-do-texto);
+  font-size: var(--texto-do-corpo);
+  font-weight: var(--peso-do-texto);
+  line-height: var(--altura-de-linha-do-texto);
+  color: var(--cinza-36);
   -webkit-font-smoothing: antialiased;
 }
 
 h1 {
-  margin: 0 0 1.5rem;
-  font-weight: 300;
-  font-size: clamp(1.7rem, 3vw, 2.15rem);
-  color: var(--titulo-cor);
+  margin: 0 0 var(--espaco-24);
+  font-size: var(--texto-do-titulo-da-pagina);
+  font-weight: var(--peso-do-texto);
+  line-height: var(--altura-de-linha-do-titulo);
+  color: var(--azul-escuro-ib);
 }
 
-.lede {
+.titulo-de-secao {
   margin: 0;
-  max-width: 68ch;
-  font-size: 1.05rem;
-  color: var(--texto-suave-cor);
+  font-size: var(--texto-do-titulo-de-secao);
+  font-weight: var(--peso-de-destaque);
+  letter-spacing: var(--entreletra-de-versalete);
+  text-transform: uppercase;
+  color: var(--cinza-53);
+}
+
+.introducao {
+  margin: 0;
+  max-width: var(--largura-maxima-do-texto);
+  color: var(--cinza-53);
+}
+
+a {
+  color: var(--cor-de-acao-ao-passar);
+  text-underline-offset: var(--recuo-do-sublinhado);
+}
+
+a:hover {
+  color: var(--cor-de-acao-ao-apertar);
+}
+
+a:focus-visible {
+  outline: var(--espessura-do-anel-de-foco) solid var(--cor-do-foco);
+  outline-offset: var(--recuo-do-anel-de-foco);
+  border-radius: var(--raio-de-canto-pequeno);
 }

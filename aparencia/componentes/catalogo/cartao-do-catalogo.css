@@ -1,0 +1,43 @@
+.lista-de-cartoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--largura-minima-do-cartao), 1fr));
+  gap: var(--espaco-16);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cartao-do-catalogo {
+  display: grid;
+  align-content: start;
+  gap: var(--espaco-8);
+  height: 100%;
+  background: var(--cinza-97);
+  border: var(--largura-da-borda) solid var(--cinza-92);
+  border-radius: var(--raio-de-canto);
+  padding: var(--espaco-20);
+  text-decoration: none;
+  color: var(--cinza-53);
+}
+
+.cartao-do-catalogo:hover {
+  border-color: var(--cor-de-acao);
+  color: var(--cinza-53);
+}
+
+.cartao-do-catalogo:active {
+  border-color: var(--cor-de-acao-ao-apertar);
+}
+
+.cartao-do-catalogo:focus-visible {
+  outline: var(--espessura-do-anel-de-foco) solid var(--cor-do-foco);
+  outline-offset: var(--recuo-do-anel-de-foco);
+  border-radius: var(--raio-de-canto);
+}
+
+.titulo-do-cartao {
+  font-size: var(--texto-do-titulo-do-cartao);
+  font-weight: var(--peso-de-destaque);
+  line-height: var(--altura-de-linha-do-titulo);
+  color: var(--azul-escuro-ib);
+}

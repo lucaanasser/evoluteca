@@ -1,0 +1,12 @@
+.listra-superior,
+.listra-inferior {
+  height: var(--altura-da-listra);
+}
+
+.listra-superior {
+  background: var(--amarelo-usp);
+}
+
+.listra-inferior {
+  background: var(--azul-ciano-usp);
+}

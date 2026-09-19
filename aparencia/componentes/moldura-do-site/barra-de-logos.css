@@ -1,0 +1,39 @@
+.barra-de-logos {
+  height: var(--altura-da-barra-de-logos);
+  background: var(--azul-usp);
+}
+
+.barra-de-logos .coluna-central {
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-16);
+  height: 100%;
+}
+
+.logo-institucional {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  opacity: var(--opacidade-do-logo);
+}
+
+.logo-institucional:hover {
+  opacity: 1;
+}
+
+.logo-institucional:focus-visible {
+  outline-color: var(--branco-100);
+}
+
+.logo-institucional img {
+  display: block;
+  width: auto;
+}
+
+.logo-do-ib {
+  height: var(--altura-do-logo-do-ib);
+}
+
+.logo-da-usp {
+  height: var(--altura-do-logo-da-usp);
+}

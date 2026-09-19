@@ -1,0 +1,43 @@
+/* O que é desenhado dentro de um gráfico. Medidas do canvas vão em pixels, sem unidade.
+   Estilo de camada: --camada-NOME-propriedade. A variante -densa vale para muitas séries. */
+
+:root {
+  --grafico-altura: 440px;
+
+  --grafico-cor-da-grade:        var(--cinza-92);
+  --grafico-cor-dos-eixos:       var(--cinza-53);
+  --grafico-espessura-da-grade:  1;
+  --grafico-marcas-no-eixo-x:    6;
+  --grafico-marcas-no-eixo-y:    5;
+
+  --grafico-margem-esquerda:  54;
+  --grafico-margem-direita:   16;
+  --grafico-margem-superior:  18;
+  --grafico-margem-inferior:  50;
+
+  --grafico-recuo-dos-numeros-do-x:  8;
+  --grafico-recuo-dos-numeros-do-y:  8;
+  --grafico-recuo-do-rotulo-do-x:   27;
+  --grafico-recuo-do-rotulo-do-y:   13;
+
+  --grafico-folga-em-y: 0.04;
+
+  --grafico-folga-do-recorte-x:  1;
+  --grafico-folga-do-recorte-y:  4;
+
+  --camadas-denso-a-partir-de: 4;
+
+  --camada-destaque-cor:        var(--azul-escuro-ib);
+  --camada-destaque-largura:    2.6;
+  --camada-destaque-opacidade:  1;
+
+  --camada-feixe-cor:                var(--azul-usp);
+  --camada-feixe-largura:            2;
+  --camada-feixe-opacidade:          0.75;
+  --camada-feixe-largura-densa:      1.3;
+  --camada-feixe-opacidade-densa:    0.3;
+
+  --camada-preenchido-cor:        var(--azul-usp);
+  --camada-preenchido-largura:    1;
+  --camada-preenchido-opacidade:  0.85;
+}

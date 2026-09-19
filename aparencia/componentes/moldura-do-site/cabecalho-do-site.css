@@ -1,0 +1,30 @@
+.cabecalho-do-site {
+  background: var(--cinza-97);
+  border-bottom: var(--largura-da-borda) solid var(--cinza-92);
+}
+
+.cabecalho-do-site .coluna-central {
+  padding-block: var(--espaco-16);
+}
+
+.marca {
+  display: inline-flex;
+  flex-direction: column;
+  line-height: var(--altura-de-linha-da-marca);
+  text-decoration: none;
+  color: var(--azul-escuro-ib);
+}
+
+.marca:hover {
+  color: var(--azul-escuro-ib);
+}
+
+.marca-nome {
+  font-size: var(--texto-do-nome-do-site);
+  font-weight: var(--peso-de-destaque);
+  letter-spacing: var(--entreletra-da-marca);
+}
+
+.marca-instituicao {
+  font-weight: var(--peso-de-destaque);
+}

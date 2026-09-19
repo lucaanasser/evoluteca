@@ -1,4 +1,21 @@
-@import "variaveis/__pacote__.css";
-@import "pagina/__pacote__.css";
-@import "componentes/__pacote__.css";
-@import "simulador/__pacote__.css";
+/* Todos os CSS do site, em ordem. Arquivo novo só vale depois de entrar nesta lista. */
+
+@import "variaveis/cores.css";
+@import "variaveis/tipografia.css";
+@import "variaveis/medidas.css";
+@import "variaveis/grafico.css";
+
+@import "pagina/largura-e-margens.css";
+@import "pagina/texto-e-titulos.css";
+
+@import "componentes/moldura-do-site/listras-da-usp.css";
+@import "componentes/moldura-do-site/barra-de-logos.css";
+@import "componentes/moldura-do-site/cabecalho-do-site.css";
+@import "componentes/comuns/titulo-da-pagina.css";
+@import "componentes/comuns/botoes.css";
+@import "componentes/simulador/controle-de-parametro.css";
+@import "componentes/simulador/controle-deslizante.css";
+@import "componentes/simulador/painel-do-simulador.css";
+@import "componentes/grafico/caixa-do-grafico.css";
+@import "componentes/grafico/legenda-do-grafico.css";
+@import "componentes/catalogo/cartao-do-catalogo.css";

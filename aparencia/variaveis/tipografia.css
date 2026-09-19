@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+:root {
+  --fonte-do-texto: "Open Sans", Arial, sans-serif;
+
+  --texto-do-titulo-da-pagina: clamp(1.7rem, 3vw, 2.15rem);
+  --texto-do-nome-do-site:     1.7rem;
+  --texto-do-titulo-do-cartao: 1.15rem;
+  --texto-do-corpo:            1rem;
+  --texto-do-titulo-de-secao:  0.75rem;
+  --texto-do-grafico:          12px;
+
+  --peso-do-texto:    400;
+  --peso-de-destaque: 600;
+
+  --altura-de-linha-do-texto:   1.6;
+  --altura-de-linha-do-titulo:  1.2;
+  --altura-de-linha-da-marca:   1.1;
+
+  --entreletra-de-versalete: 0.12em;
+  --entreletra-da-marca:    -0.01em;
+  --recuo-do-sublinhado:     0.2em;
+}

@@ -1,0 +1,24 @@
+.grade-de-graficos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(var(--largura-minima-do-grafico), 100%), 1fr));
+  gap: var(--espaco-24);
+}
+
+.caixa-do-grafico {
+  display: grid;
+  gap: var(--espaco-8);
+  margin: 0;
+  min-width: 0;
+}
+
+.tela-do-grafico {
+  position: relative;
+  width: 100%;
+  height: var(--grafico-altura);
+}
+
+.tela-do-grafico canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

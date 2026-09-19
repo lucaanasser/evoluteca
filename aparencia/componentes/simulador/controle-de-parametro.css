@@ -1,0 +1,23 @@
+.lista-de-parametros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--largura-minima-do-parametro), 1fr));
+  gap: var(--espaco-16) var(--espaco-28);
+}
+
+.controle-de-parametro {
+  display: grid;
+  gap: var(--espaco-4);
+}
+
+.controle-de-parametro label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--espaco-8);
+  font-weight: var(--peso-de-destaque);
+}
+
+.valor-do-parametro {
+  color: var(--cor-de-acao-ao-passar);
+  font-variant-numeric: tabular-nums;
+}

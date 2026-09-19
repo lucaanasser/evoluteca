@@ -1,13 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 0 1.25rem;
-  max-width: 1170px;
+.coluna-central {
+  margin-inline: auto;
+  padding-inline: var(--espaco-20);
+  max-width: var(--largura-maxima-da-pagina);
 }
 
 main {
-  padding: 2.5rem 0 4rem;
+  padding-block: var(--espaco-40) var(--espaco-64);
 }

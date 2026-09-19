@@ -1,0 +1,84 @@
+/* Regras em dobro: -webkit vale para Chrome e Safari, -moz para Firefox, e o CSS não deixa juntar.
+   Ao mudar uma, mude a outra igual. */
+
+.controle-deslizante {
+  -webkit-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: var(--deslizante-diametro-do-botao);
+  margin: 0;
+  background: transparent;
+  cursor: pointer;
+  --preenchido: 0%;
+}
+
+.controle-deslizante::-webkit-slider-runnable-track {
+  height: var(--deslizante-altura-do-trilho);
+  border-radius: var(--raio-de-canto-pequeno);
+  background: linear-gradient(
+    to right,
+    var(--cor-de-acao) var(--preenchido),
+    var(--cinza-92) var(--preenchido)
+  );
+}
+
+.controle-deslizante::-moz-range-track {
+  height: var(--deslizante-altura-do-trilho);
+  border-radius: var(--raio-de-canto-pequeno);
+  background: linear-gradient(
+    to right,
+    var(--cor-de-acao) var(--preenchido),
+    var(--cinza-92) var(--preenchido)
+  );
+}
+
+.controle-deslizante::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: var(--deslizante-diametro-do-botao);
+  height: var(--deslizante-diametro-do-botao);
+  margin-top: calc((var(--deslizante-altura-do-trilho) - var(--deslizante-diametro-do-botao)) / 2);
+  border: none;
+  border-radius: var(--raio-redondo);
+  background: var(--cor-de-acao);
+}
+
+.controle-deslizante::-moz-range-thumb {
+  width: var(--deslizante-diametro-do-botao);
+  height: var(--deslizante-diametro-do-botao);
+  border: none;
+  border-radius: var(--raio-redondo);
+  background: var(--cor-de-acao);
+}
+
+.controle-deslizante:hover::-webkit-slider-thumb {
+  background: var(--cor-de-acao-ao-passar);
+}
+
+.controle-deslizante:hover::-moz-range-thumb {
+  background: var(--cor-de-acao-ao-passar);
+}
+
+.controle-deslizante:active::-webkit-slider-thumb {
+  background: var(--cor-de-acao-ao-apertar);
+}
+
+.controle-deslizante:active::-moz-range-thumb {
+  background: var(--cor-de-acao-ao-apertar);
+}
+
+.controle-deslizante:focus-visible {
+  outline: none;
+}
+
+.controle-deslizante:focus-visible::-webkit-slider-thumb {
+  outline: var(--espessura-do-anel-de-foco) solid var(--cor-do-foco);
+  outline-offset: var(--recuo-do-anel-de-foco);
+}
+
+.controle-deslizante:focus-visible::-moz-range-thumb {
+  outline: var(--espessura-do-anel-de-foco) solid var(--cor-do-foco);
+  outline-offset: var(--recuo-do-anel-de-foco);
+}
+

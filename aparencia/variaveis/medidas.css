@@ -1,0 +1,36 @@
+:root {
+  --espaco-4:    4px;
+  --espaco-8:    8px;
+  --espaco-12:  12px;
+  --espaco-16:  16px;
+  --espaco-20:  20px;
+  --espaco-24:  24px;
+  --espaco-28:  28px;
+  --espaco-40:  40px;
+  --espaco-64:  64px;
+
+  --raio-de-canto:         4px;
+  --raio-de-canto-pequeno: 2px;
+  --raio-redondo:          50%;
+  --largura-da-borda:      1px;
+
+  --espessura-do-anel-de-foco: 2px;
+  --recuo-do-anel-de-foco:     2px;
+
+  --largura-maxima-da-pagina:    1170px;
+  --largura-maxima-do-texto:       68ch;
+  --largura-minima-do-parametro:  210px;
+  --largura-minima-do-cartao:     260px;
+  --largura-minima-do-grafico:    340px;
+
+  --altura-da-listra:               6px;
+  --altura-da-barra-de-logos:      40px;
+  --altura-do-logo-do-ib:          26px;
+  --altura-do-logo-da-usp:         22px;
+
+  --deslizante-altura-do-trilho:    4px;
+  --deslizante-diametro-do-botao:  16px;
+
+  --largura-da-amostra:    20px;
+  --espessura-da-amostra:   3px;
+}

@@ -1,0 +1,21 @@
+.painel-do-simulador {
+  display: grid;
+  gap: var(--espaco-16);
+  background: var(--branco-100);
+  border: var(--largura-da-borda) solid var(--cinza-92);
+  border-radius: var(--raio-de-canto);
+  padding: var(--espaco-16) var(--espaco-20) var(--espaco-20);
+  margin-bottom: var(--espaco-20);
+}
+
+.painel-de-controles {
+  background: var(--cinza-97);
+}
+
+.topo-do-painel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--espaco-12) var(--espaco-24);
+}

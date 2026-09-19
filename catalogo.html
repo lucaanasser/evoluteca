@@ -4,20 +4,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Catálogo · Evoluteca</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta name="description" content="Os simuladores da Evoluteca.">
   <link rel="stylesheet" href="aparencia/__pacote__.css">
   <script type="importmap">
     {
       "imports": {
-        "r": "./motor-de-simuladores/r/__pacote__.js",
-        "criar-html": "./criar-html.js"
+        "r": "./r/__pacote__.js",
+        "motor": "./motor/__pacote__.js"
       }
     }
   </script>
 </head>
 <body>
-  <main id="raiz" class="container"></main>
+
+  <main id="raiz" class="coluna-central"></main>
+
+  <script type="module">
+    import { montarMoldura, montarCatalogo } from "motor";
+    import { catalogo } from "./simuladores/catalogo.js";
+
+    montarMoldura();
+    montarCatalogo(document.getElementById("raiz"), catalogo);
+  </script>
 </body>
 </html>

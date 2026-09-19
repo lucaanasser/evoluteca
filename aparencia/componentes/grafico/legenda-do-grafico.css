@@ -1,0 +1,25 @@
+/* A cor da amostra é pintada pelo motor, a partir de variaveis/grafico.css. */
+
+.legenda-do-grafico {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espaco-4) var(--espaco-16);
+  color: var(--cinza-53);
+}
+
+.legenda-do-grafico:empty {
+  display: none;
+}
+
+.legenda-item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--espaco-8);
+}
+
+.amostra-da-camada {
+  width: var(--largura-da-amostra);
+  height: var(--espessura-da-amostra);
+  border-radius: var(--raio-de-canto-pequeno);
+  flex-shrink: 0;
+}

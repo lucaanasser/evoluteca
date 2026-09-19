@@ -1,0 +1,8 @@
+.titulo-da-pagina {
+  margin-bottom: var(--espaco-24);
+  max-width: var(--largura-maxima-do-texto);
+}
+
+.titulo-da-pagina h1 {
+  margin-bottom: var(--espaco-8);
+}

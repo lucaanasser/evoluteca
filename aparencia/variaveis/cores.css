@@ -1,0 +1,23 @@
+/* As cores do site. O número no nome é a luminosidade OKLCH: 0 é preto, 100 é branco. */
+
+:root {
+   --amarelo-usp:       #ffb500;
+   --azul-usp:          #1094ab;
+   --azul-ciano-usp:    #00c5d4;
+   --azul-escuro-ib:    #142560;
+
+   --branco-100: #ffffff;
+   --cinza-36:   #3d3d3d;
+   --cinza-53:   #6b6b6b;
+   --cinza-92:   #e5e5e5;
+   --cinza-97:   #f5f5f5;
+   --azul-53:    #0d7a8d;
+   --azul-46:    #0a6474;
+
+   --cor-de-acao:            var(--azul-usp);
+   --cor-de-acao-ao-passar:  var(--azul-53);
+   --cor-de-acao-ao-apertar: var(--azul-46);
+   --cor-do-foco:            var(--azul-escuro-ib);
+
+   --opacidade-do-logo:      0.95;
+}
